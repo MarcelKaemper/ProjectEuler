@@ -11,10 +11,20 @@
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
 
-sub sumSquares{
+sub sumSquare{
 	$res = 0;
-	foreach $val(@_){
-		$res+=$val;
+	for($i = 1; $i<=$_[0]; $i++){
+		$res+=$i**2;
 	}
 	return $res;
 }
+
+sub squareSum{
+	$res = 0;
+	for($i = 1; $i<=$_[0]; $i++){
+		$res+=$i;
+	}
+	return $res**2;
+}
+
+print(squareSum(100)-sumSquare(100)."\n");
