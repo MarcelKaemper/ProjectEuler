@@ -2,6 +2,8 @@
 # The sum of these multiples is 23.
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
+use strict;
+
 $sum = 0;
 
 for($i = 1; $i < 1000; $i++){
@@ -10,4 +12,4 @@ for($i = 1; $i < 1000; $i++){
 	}
 }
 
-print "Sum: $sum\n";
+print("Sum: $sum\n");
