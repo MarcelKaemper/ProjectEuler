@@ -10,4 +10,4 @@ for($i = 1; $i < 1000; $i++){
 	}
 }
 
-print("Sum: $sum\n");
+print "Sum: $sum\n";
